@@ -5,23 +5,109 @@
       Guck mal, Schnackenburg!
     </title>
     <style>
-      img {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .gallery {
+        column-count: 4;
+        column-gap: 0;
+        list-style-type: none;
+      }
+      @media (max-width: 1200px) {
+        .gallery{
+          column-count: 3;
+          column-gap: 0;
+        }
+      }
+      @media (max-width: 800px) {
+        .gallery{
+          column-count: 2;
+          column-gap: 0;
+        }
+      }
+      @media (max-width:600px) {
+        .gallery{
+          column-count: 1;
+        }
+      }
+      .gallery img {
+        display: block;
+        height: auto;
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
       }
     </style>
   </head>
   <body>
-    <img src="images/eyes-4dcV.jpeg" title="53°2'7.35N  11°33'53.22E">
-    <img src="images/eyes-deqz.jpeg" title="53°2'27.92N 11°33'6.3E">
-    <img src="images/eyes-dX0y.jpeg" title="53°2'26.63N 11°33'43.83E">
-    <img src="images/eyes-splG.jpeg" title="53°2'38.37N 11°33'8.202E">
-    <img src="images/eyes-Ht5p.jpeg" title="53°2'13.75N 11°33'39.468E">
-    <img src="images/eyes-wRTa.jpeg" title="53°2'17.69N 11°33'49.782E">
-    <img src="images/eyes-lX2c.jpeg" title="53°2'11.08N 11°33'51.162E">
-    <img src="images/eyes-4cnC.jpeg" title="53°2'9.75N  11°33'54.27E">
-    <img src="images/eyes-g9Xh.jpeg" title="53°2'10.59N 11°34'3.21E">
-    <img src="images/eyes-m8Kb.jpeg" title="53°2'16.96N 11°33'57.27E">
-    <img src="images/eyes-St8x.jpeg" title="53°2'15.05N 11°34'2.868E">
-    <img src="images/eyes-oAUp.jpeg" title="53°2'35.32N 11°33'10.542E">
-  </body>
+    <ul class="gallery">
+      <li>
+        <figure>
+          <img src="images/eyes-4dcV.jpeg">
+          <figcaption>53°2'7.35N  11°33'53.22E</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-deqz.jpeg" title="53°2'27.92N 11°33'6.3E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-dX0y.jpeg" title="53°2'26.63N 11°33'43.83E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-St8x.jpeg" title="53°2'15.05N 11°34'2.868E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-wRTa.jpeg" title="53°2'17.69N 11°33'49.782E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-Ht5p.jpeg" title="53°2'13.75N 11°33'39.468E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-splG.jpeg" title="53°2'38.37N 11°33'8.202E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-lX2c.jpeg" title="53°2'11.08N 11°33'51.162E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-4cnC.jpeg" title="53°2'9.75N  11°33'54.27E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-g9Xh.jpeg" title="53°2'10.59N 11°34'3.21E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-m8Kb.jpeg" title="53°2'16.96N 11°33'57.27E">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="images/eyes-oAUp.jpeg" title="53°2'35.32N 11°33'10.542E">
+        </figure>
+      </li>
+    </ul>
+</body>
 </html>
