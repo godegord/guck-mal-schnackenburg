@@ -15,29 +15,37 @@
       *::after {
         box-sizing: border-box;
       }
-      html{
+      html {
         text-size-adjust: none;
       }
-
       .gallery {
         column-count: 4;
         column-gap: 0;
         list-style-type: none;
       }
       @media (max-width: 2200px) {
-        .gallery{
+        html {
+          font-size: 0.8rem;
+        }
+        .gallery {
           column-count: 3;
           column-gap: 0;
         }
       }
       @media (max-width: 1600px) {
-        .gallery{
+        html {
+          font-size: 1rem;
+        }
+        .gallery {
           column-count: 2;
           column-gap: 0;
         }
       }
-      @media (max-width:1200px) {
-        .gallery{
+      @media (max-width: 1200px) {
+        html {
+          font-size: 1.5rem;
+        }
+        .gallery {
           column-count: 1;
         }
       }
@@ -56,7 +64,6 @@
         bottom: 0;
         right: 0;
         padding: 0.25em 1em;
-        font-size: 0.8rem;
         background-color: yellow;
         color: #000;
       }
@@ -72,7 +79,6 @@
         display: inline-block;
         margin-right: 0.25em;
         font-weight: normal;
-        font-size: 100%;
       }
       footer ul {
         display: inline-block;
