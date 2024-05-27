@@ -89,21 +89,25 @@
         display: inline-block;
         padding: 0 0.25em;
       }
-      footer a.discord {
+      footer .icon {
         display: inline-block;
         padding-left: 24px;
+        background-repeat: no-repeat;
+      }
+      footer .discord {
         background-image: url(images/icons/discord.png);
         background-position: 0 -1px;
         background-size: auto 20px;
-        background-repeat: no-repeat;
       }
-      footer a.email {
-        display: inline-block;
-        padding-left: 24px;
+      footer .x {
+        background-image: url(images/icons/x.png);
+        background-position: 2px 0;
+        background-size: auto 17px;
+      }
+      footer .email {
         background-image: url(images/icons/email.png);
         background-position: 2px 0;
         background-size: auto 17px;
-        background-repeat: no-repeat;
       }
     </style>
   </head>
@@ -245,8 +249,9 @@
     <footer>
       <h3>Kontakt:</h3>
       <ul>
-        <li><a class="discord" href="https://discord.gg/nQfYYsX7">Discord</a></li>
-        <li><a class="email" href="mailto:godegord@proton.me">E-Mail</a></li>
+        <li><a class="icon discord" href="https://discord.gg/nQfYYsX7">Discord</a></li>
+        <li><a class="icon x" href="https://x.com/godegord">@godegord</a></li>
+        <li><a class="icon email" href="mailto:godegord@proton.me">E-Mail</a></li>
       </ul>
     </footer>
 </body>
