@@ -8,6 +8,7 @@
       * {
         margin: 0;
         padding: 0;
+        font-family: sans-serif;
       }
       *,
       *::before,
@@ -36,6 +37,9 @@
           column-count: 1;
         }
       }
+      .gallery figure {
+        position: relative;
+      }
       .gallery img {
         display: block;
         height: auto;
@@ -43,9 +47,20 @@
         max-width: 100%;
         margin: 0 auto;
       }
-
       .gallery figcaption {
-        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.25em 1em;
+        font-size: 0.8em;
+      }
+      .gallery li:nth-child(odd) figcaption {
+        background-color: magenta;
+        color: #fff;
+      }
+      .gallery li:nth-child(even) figcaption {
+        background-color: yellow;
+        color: #000;
       }
     </style>
   </head>
